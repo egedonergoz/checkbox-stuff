@@ -1,0 +1,19 @@
+*{
+    background-color: rgb(175, 166, 166);
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    padding-top: 220px  ;
+    margin-left: 820px;
+    flex-direction: column;
+}
+
+.saveBtn{
+    display: flex;
+    justify-content: center;
+    margin-right: 195px;
+    padding-top: 20px;
+    
+}

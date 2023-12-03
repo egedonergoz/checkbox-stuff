@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="boxes">
+        <label><input type="checkbox" id="Seyahat">Seyahat</label>
+        <label><input type="checkbox" id="Yemek">Yemek</label>
+        <label><input type="checkbox" id="Spor">Spor</label>
+        <label><input type="checkbox" id="Sinema">Sinema</label>
+        <label><input type="checkbox" id="Fitness">Fitness</label>
+
+        <div id="Secimler">
+                             
+        </div>
+        
+        
+    </div>
+
+    <div class="saveBtn">
+        <button type="button" onclick="Kaydet()">Kaydet</button>
+
+    </div>
+    <script>
+        function Kaydet() {
+             Seyahat = document.getElementById("Seyahat").checked;
+             Yemek = document.getElementById("Yemek").checked;
+             Spor = document.getElementById("Spor").checked;
+             Sinema = document.getElementById("Sinema").checked;
+             Fitness = document.getElementById("Fitness").checked;
+
+             Secimler = document.getElementById("Secimler");
+
+            if (Seyahat) {
+                Secimler.innerHTML += "<p>Seyahat</p>";
+            }
+            if (Yemek) {
+                Secimler.innerHTML += "<p>Yemek</p>";
+            }
+            if (Spor) {
+                Secimler.innerHTML += "<p>Spor</p>";
+            }
+            if (Sinema) {
+                Secimler.innerHTML += "<p>Sinema</p>";
+            }
+            if (Fitness) {
+                Secimler.innerHTML += "<p>Fitness</p>";
+            }
+
+        }
+    </script>
+</body>
+</html>
